@@ -1,5 +1,5 @@
 import { Controller, Get } from '@nestjs/common';
-import { LeetcodeService } from './leetcode.service';
+import { LeetcodeService } from '../../modules/leetcode/leetcode.service';
 
 @Controller('leetcode')
 export class LeetcodeController {

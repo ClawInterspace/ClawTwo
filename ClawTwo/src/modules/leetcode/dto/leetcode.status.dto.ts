@@ -1,14 +1,14 @@
 /**
  * LeetcodeFile
  * @export
- * @class LeetcodeStatus
+ * @class LeetcodeStatusDto
  */
 
-export default class LeetcodeStatus {
-  public name: string = ''
+export default class LeetcodeStatusDto {
+  public questionName: string = ''
   public tags: string[] = []
   public link: string = ''
-  public passProgrammingLanguage: string[] = []
+  public passProgLangs: string[] = []
 
   constructor(fields?: { name?: string }) {
     if (fields) {

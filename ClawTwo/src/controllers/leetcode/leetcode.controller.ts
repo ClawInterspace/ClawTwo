@@ -1,13 +1,13 @@
 import { Controller, Get } from '@nestjs/common'
 import { LeetcodeService } from '../../modules/leetcode/leetcode.service'
-import LeetcodeStatus from '../../modules/leetcode/dto/LeetcodeStatus'
+import LeetcodeStatusDto from '../../modules/leetcode/dto/leetcode.status.dto'
 
 @Controller('leetcode')
 export class LeetcodeController {
   constructor(private readonly leetcodeService: LeetcodeService) {}
 
   @Get('all')
-  getList(): LeetcodeStatus[] {
+  getList(): LeetcodeStatusDto[] {
     return this.leetcodeService.getList()
   }
 }
